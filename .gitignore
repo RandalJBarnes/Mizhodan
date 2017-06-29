@@ -1,0 +1,15 @@
+bin/
+obj/
+data/
+doc/
+notes/
+
+*.log
+*.save-failed
+*.*.save-failed
+
+# MikTeX/LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.synctex

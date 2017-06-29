@@ -1,0 +1,203 @@
+# depslib dependency file v1.0
+1498757964 source:c:\users\randal\google drive\projects\mizhodan\src\engine.cpp
+	<cassert>
+	<iomanip>
+	<math.h>
+	<numeric>
+	<sstream>
+	"engine.h"
+	"matrix.h"
+	"linear_systems.h"
+
+1498757779 c:\users\randal\google drive\projects\mizhodan\src\engine.h
+	<stdexcept>
+	<vector>
+	"read_obs.h"
+	"read_targets.h"
+
+1498476873 c:\users\randal\google drive\projects\mizhodan\src\read_data.h
+	<stdexcept>
+	<string>
+	<tuple>
+	<vector>
+
+1498759107 c:\users\randal\google drive\projects\mizhodan\src\matrix.h
+	<iostream>
+	<vector>
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\src\linear_systems.h
+	"matrix.h"
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\src\special_functions.h
+	<iostream>
+
+1498759574 source:c:\users\randal\google drive\projects\mizhodan\src\linear_systems.cpp
+	"linear_systems.h"
+	<cassert>
+	<cmath>
+	"sum_product-inl.h"
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\src\sum_product-inl.h
+
+1498759241 source:c:\users\randal\google drive\projects\mizhodan\src\matrix.cpp
+	<algorithm>
+	<cassert>
+	<cmath>
+	<cstring>
+	<iomanip>
+	<iostream>
+	<numeric>
+	<sstream>
+	<vector>
+	"matrix.h"
+	"sum_product-inl.h"
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\src\now.cpp
+	<ctime>
+	<string>
+	"now.h"
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\src\now.h
+	<string>
+
+1498476873 source:c:\users\randal\google drive\projects\mizhodan\src\read_data.cpp
+	<algorithm>
+	<fstream>
+	<sstream>
+	"../include/csv.h"
+	"read_data.h"
+
+1497461280 c:\users\randal\google drive\projects\mizhodan\include\csv.h
+	<vector>
+	<string>
+	<cstring>
+	<algorithm>
+	<utility>
+	<cstdio>
+	<exception>
+	<mutex>
+	<thread>
+	<condition_variable>
+	<memory>
+	<cassert>
+	<cerrno>
+	<istream>
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\src\special_functions.cpp
+	<cassert>
+	<cmath>
+	"numerical_constants.h"
+	"special_functions.h"
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\src\numerical_constants.h
+	<limits>
+
+1498758450 source:c:\users\randal\google drive\projects\mizhodan\src\version.cpp
+	<iostream>
+	"version.h"
+
+1498734917 c:\users\randal\google drive\projects\mizhodan\src\version.h
+	<string>
+
+1498738327 source:c:\users\randal\google drive\projects\mizhodan\src\write_results.cpp
+	<algorithm>
+	<fstream>
+	<iomanip>
+	<sstream>
+	"engine.h"
+	"write_results.h"
+
+1498738035 c:\users\randal\google drive\projects\mizhodan\src\write_results.h
+	<stdexcept>
+	<string>
+	<tuple>
+	<vector>
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\test_engine.cpp
+	<utility>
+	"test_engine.h"
+	"unit_test.h"
+	"..\src\engine.h"
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\test\test_engine.h
+	<utility>
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\test\unit_test.h
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\test_linear_systems.cpp
+	<utility>
+	"test_linear_systems.h"
+	"unit_test.h"
+	"..\src\linear_systems.h"
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\test\test_linear_systems.h
+	<utility>
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\test_main.cpp
+	<iostream>
+	"test_engine.h"
+	"test_linear_systems.h"
+	"test_matrix.h"
+	"test_special_functions.h"
+
+1498734917 c:\users\randal\google drive\projects\mizhodan\test\test_matrix.h
+	<utility>
+
+1498734918 c:\users\randal\google drive\projects\mizhodan\test\test_special_functions.h
+	<utility>
+
+1498759412 source:c:\users\randal\google drive\projects\mizhodan\test\test_matrix.cpp
+	<iomanip>
+	<utility>
+	"test_matrix.h"
+	"unit_test.h"
+	"..\src\matrix.h"
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\test_special_functions.cpp
+	<cassert>
+	<cmath>
+	"test_special_functions.h"
+	"unit_test.h"
+	"..\src\special_functions.h"
+
+1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\unit_test.cpp
+	<iostream>
+
+1498735981 source:c:\users\randal\google drive\projects\mizhodan\src\read_obs.cpp
+	<algorithm>
+	<fstream>
+	<sstream>
+	"../include/csv.h"
+	"read_obs.h"
+
+1498736277 c:\users\randal\google drive\projects\mizhodan\src\read_obs.h
+	<stdexcept>
+	<string>
+	<tuple>
+	<vector>
+
+1498757916 source:c:\users\randal\google drive\projects\mizhodan\src\main.cpp
+	<cstring>
+	<ctime>
+	<iostream>
+	"engine.h"
+	"now.h"
+	"numerical_constants.h"
+	"read_obs.h"
+	"read_targets.h"
+	"version.h"
+	"write_results.h"
+
+1498736675 c:\users\randal\google drive\projects\mizhodan\src\read_targets.h
+	<stdexcept>
+	<string>
+	<tuple>
+	<vector>
+
+1498736686 source:c:\users\randal\google drive\projects\mizhodan\src\read_targets.cpp
+	<algorithm>
+	<fstream>
+	<sstream>
+	"../include/csv.h"
+	"read_targets.h"
+
