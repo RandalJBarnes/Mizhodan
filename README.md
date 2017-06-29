@@ -1,5 +1,5 @@
 # Mizhodan
-Basic Ordinary Kriging tool.
+   A basic two-dimensional Ordinary Kriging interpolator using an exponential variogram model and all of the data. 
 
 ## Usage
    `Mizhodan <nugget> <sill> <range> <obs file> <targets file> <results file>`  
