@@ -20,6 +20,7 @@
 //=============================================================================
 bool CholeskyDecomposition( const Matrix& A, Matrix& L );
 void CholeskySolve( const Matrix& L, const Matrix& b, Matrix& x );
+void CholeskyInverse( const Matrix& L, Matrix& Ainv );
 
 bool RSPDInv( const Matrix& A, Matrix& Ainv );
 bool LeastSquaresSolve( const Matrix& A, const Matrix& B, Matrix& X );

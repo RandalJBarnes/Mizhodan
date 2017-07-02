@@ -43,6 +43,9 @@
 					<Add option="-m64" />
 					<Add option="-static" />
 				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c &quot;copy .\bin\Release\Mizhodan.exe .&quot;' />
+				</ExtraCommands>
 			</Target>
 			<Target title="Test">
 				<Option output="bin/Test/test_Mizhodan" prefix_auto="1" extension_auto="1" />

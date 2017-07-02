@@ -7,7 +7,7 @@
 //    University of Minnesota
 //
 // version:
-//    29 June 2017
+//    2 July 2017
 //=============================================================================
 #include <utility>
 
@@ -26,7 +26,7 @@ namespace{
    // TestEngine
    //
    //    This is simply an example problem.  The "correct" solution was
-   //    computed using the Matlab version of aakozi.
+   //    computed using the Matlab version of mizhodan.
    //--------------------------------------------------------------------------
    bool TestEngine()
    {

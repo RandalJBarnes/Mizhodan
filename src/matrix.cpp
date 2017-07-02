@@ -11,7 +11,7 @@
 //    University of Minnesota
 //
 // version:
-//    29 June 2017
+//    2 July 2017
 //=============================================================================
 #include <algorithm>
 #include <cassert>
@@ -36,7 +36,7 @@
 Matrix::Matrix()
 :  m_nRows( 0 ),
    m_nCols( 0 ),
-   m_Data( nullptr )
+   m_Data( nullptr ) 
 {
 }
 
@@ -632,6 +632,31 @@ void Slice( const Matrix& A, const std::vector<int>& row_flag, const std::vector
                   C(row, col) = A(i,j);
                   ++col;
                }
+            }
+            ++row;
+         }
+      }
+   }
+}
+
+//-----------------------------------------------------------------------------
+// SliceRows Matrix operations.
+//-----------------------------------------------------------------------------
+void SliceRows( const Matrix& A, const std::vector<int>& row_flag, Matrix& C ) {
+   assert( int(row_flag.size()) == A.nRows() );
+
+   int nRows = std::count_if( row_flag.begin(), row_flag.end(), [](int i) {
+      return i != 0;
+   } );
+   int nCols = A.nCols();
+   C.Resize( nRows, nCols );
+
+   if( nRows*nCols > 0 ) {
+      int row = 0;
+      for (int i = 0; i < A.nRows(); ++i) {
+         if (row_flag[i] != 0) {
+            for (int j = 0; j < A.nCols(); ++j) {
+               C(row, j) = A(i,j);
             }
             ++row;
          }

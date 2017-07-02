@@ -43,7 +43,7 @@ int main()
    nfail += counts.second;
 
    if (nfail > 0)
-      std::cerr << "AAKOZI TESTS: nsucc = " << nsucc << '\t' << "nfail = " << nfail << std::endl;
+      std::cerr << "MIZHODAN TESTS: nsucc = " << nsucc << '\t' << "nfail = " << nfail << std::endl;
    else
-      std::cerr << "AAKOZI TESTS: All " << nsucc << " tests passed." << std::endl;
+      std::cerr << "MIZHODAN TESTS: All " << nsucc << " tests passed." << std::endl;
 }

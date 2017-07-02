@@ -21,17 +21,17 @@
 	<tuple>
 	<vector>
 
-1498759107 c:\users\randal\google drive\projects\mizhodan\src\matrix.h
+1498994339 c:\users\randal\google drive\projects\mizhodan\src\matrix.h
 	<iostream>
 	<vector>
 
-1498734918 c:\users\randal\google drive\projects\mizhodan\src\linear_systems.h
+1498994784 c:\users\randal\google drive\projects\mizhodan\src\linear_systems.h
 	"matrix.h"
 
 1498734918 c:\users\randal\google drive\projects\mizhodan\src\special_functions.h
 	<iostream>
 
-1498759574 source:c:\users\randal\google drive\projects\mizhodan\src\linear_systems.cpp
+1498994842 source:c:\users\randal\google drive\projects\mizhodan\src\linear_systems.cpp
 	"linear_systems.h"
 	<cassert>
 	<cmath>
@@ -39,7 +39,7 @@
 
 1498734918 c:\users\randal\google drive\projects\mizhodan\src\sum_product-inl.h
 
-1498759241 source:c:\users\randal\google drive\projects\mizhodan\src\matrix.cpp
+1498994554 source:c:\users\randal\google drive\projects\mizhodan\src\matrix.cpp
 	<algorithm>
 	<cassert>
 	<cmath>
@@ -92,7 +92,7 @@
 1498734918 c:\users\randal\google drive\projects\mizhodan\src\numerical_constants.h
 	<limits>
 
-1498758450 source:c:\users\randal\google drive\projects\mizhodan\src\version.cpp
+1498760095 source:c:\users\randal\google drive\projects\mizhodan\src\version.cpp
 	<iostream>
 	"version.h"
 
@@ -124,13 +124,13 @@
 
 1498734918 c:\users\randal\google drive\projects\mizhodan\test\unit_test.h
 
-1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\test_linear_systems.cpp
+1498995112 source:c:\users\randal\google drive\projects\mizhodan\test\test_linear_systems.cpp
 	<utility>
 	"test_linear_systems.h"
 	"unit_test.h"
 	"..\src\linear_systems.h"
 
-1498734918 c:\users\randal\google drive\projects\mizhodan\test\test_linear_systems.h
+1498995102 c:\users\randal\google drive\projects\mizhodan\test\test_linear_systems.h
 	<utility>
 
 1498734918 source:c:\users\randal\google drive\projects\mizhodan\test\test_main.cpp
@@ -140,13 +140,13 @@
 	"test_matrix.h"
 	"test_special_functions.h"
 
-1498734917 c:\users\randal\google drive\projects\mizhodan\test\test_matrix.h
+1498995123 c:\users\randal\google drive\projects\mizhodan\test\test_matrix.h
 	<utility>
 
 1498734918 c:\users\randal\google drive\projects\mizhodan\test\test_special_functions.h
 	<utility>
 
-1498759412 source:c:\users\randal\google drive\projects\mizhodan\test\test_matrix.cpp
+1498994489 source:c:\users\randal\google drive\projects\mizhodan\test\test_matrix.cpp
 	<iomanip>
 	<utility>
 	"test_matrix.h"

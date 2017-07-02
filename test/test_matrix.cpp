@@ -15,7 +15,7 @@
 //    University of Minnesota
 //
 // version:
-//    29 June 2017
+//    2 July 2017
 //=============================================================================
 #include <iomanip>
 #include <utility>
@@ -382,6 +382,22 @@ namespace{
    }
 
    //--------------------------------------------------------------------------
+   // TestMatrixSliceRow
+   //--------------------------------------------------------------------------
+   bool TestMatrixSliceRow()
+   {
+      Matrix A("1,2,3,4;5,6,7,8;9,10,11,12");
+      Matrix B;
+
+      std::vector<int> row_flag = { 1, 0, 1 };
+
+      SliceRows( A, row_flag, B );
+      Matrix C("1,2,3,4;9,10,11,12");
+
+      return CHECK( isClose(B, C, TOLERANCE) );
+   }
+   
+   //--------------------------------------------------------------------------
    // TestMatrixAdd_aM
    //--------------------------------------------------------------------------
    bool TestMatrixAdd_aM()
@@ -689,6 +705,7 @@ std::pair<int,int> test_Matrix()
    TALLY( TestMatrixNegative() );
    TALLY( TestMatrixIdentity() );
    TALLY( TestMatrixSlice() );
+   TALLY( TestMatrixSliceRow() );
    TALLY( TestMatrixAdd_aM() );
    TALLY( TestMatrixSubtract_aM() );
    TALLY( TestMatrixMultiply_aM() );

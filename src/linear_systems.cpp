@@ -86,7 +86,6 @@ bool CholeskyDecomposition( const Matrix& A, Matrix& L )
    return true;
 }
 
-
 //=============================================================================
 // CholeskySolve
 //
@@ -154,6 +153,45 @@ void CholeskySolve( const Matrix& L, const Matrix& b, Matrix& x )
    }
 }
 
+//=============================================================================
+// CholeskyInverse
+//
+//    Return the inverse of a real, symmetric, positive definite Matrix A
+//    whose Cholesky decomposition is given by L.
+//
+// Arguments:
+//    L     on entrance, the Cholesky decomposition of a real, symmetric,
+//          positive definite Matrix.
+//
+//    Ainv  on exit, the inverse of A.
+//
+// Notes:
+// o  The computation of the inverse is based upon the standard Cholesky
+//    decompostion.
+//
+// References:
+// o  Stewart, G., 1998, "Matrix Algorithms - Volume I: Basic Decompositions",
+//    SIAM, Philadelphia, 458pp., ISBN 0-89871-414-1.
+//=============================================================================
+void CholeskyInverse( const Matrix& L, Matrix& Ainv ) 
+{
+   assert( L.nRows() > 0 );
+   assert( L.nRows() == L.nCols() );
+   const int N = L.nRows();
+
+   Matrix LL(L);
+
+   // Invert L in place; remember that L is lower triangular.
+   for (int k = 0; k < N; ++k) {
+      LL(k,k) = 1.0/LL(k,k);
+
+      for (int i = 0; i < k; ++i)
+         LL(k,i) = -LL(k,k) * SumProduct( k-i, LL.Base(i,i), N, LL.Base(k,i) );
+   }
+
+   // A = L L' --> Ainv = (L')~ L~ = (L~)' L~
+   Multiply_MtM( LL, LL, Ainv );
+}
 
 //=============================================================================
 // RSPDInv

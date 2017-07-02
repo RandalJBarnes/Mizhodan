@@ -7,7 +7,7 @@
 //    University of Minnesota
 //
 // version:
-//    29 June 2017
+//    2 July 2017
 //=============================================================================
 #include <utility>
 
@@ -49,6 +49,26 @@ namespace{
       Matrix Z("1;2;3;4");
 
       return CHECK( isClose(X, Z, TOLERANCE) );
+   }
+
+   //--------------------------------------------------------------------------
+   // TestCholeskyInverse
+   //--------------------------------------------------------------------------
+   bool TestCholeskyInverse()
+   {
+      Matrix A("4,6,4,4; 6,10,9,7; 4,9,17,11; 4,7,11,18");
+      Matrix B("945,-690,174,-48; -690,532,-140,32; 174,-140,52,-16; -48,32,-16,16");
+
+      Matrix L;
+      CholeskyDecomposition(A, L);
+
+      Matrix Ainv;
+      CholeskyInverse(L, Ainv);
+
+      Matrix C;
+      Multiply_aM(1.0/144.0, B, C);
+
+      return CHECK( isClose(Ainv, C, TOLERANCE) );
    }
 
    //--------------------------------------------------------------------------
@@ -106,6 +126,7 @@ std::pair<int,int> test_LinearSystems()
 
    TALLY( TestCholeskyDecomposition() );
    TALLY( TestCholeskySolve() );
+   TALLY( TestCholeskyInverse() );
    TALLY( TestRSPDInv() );
    TALLY( TestLeastSquaresSolve() );
    TALLY( TestAffineTransformation() );
